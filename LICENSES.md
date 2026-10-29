@@ -9,3 +9,7 @@ No permission over personal data, private university material or future thesis w
 ## Private submissions
 
 Full reports, report source files and presentation materials are not distributed in this edition. The licences above apply to the original material that is included here; they do not grant rights over independently held private submissions. Removing a previously public version does not revoke licences validly granted for that version.
+
+## Conceptual illustration
+
+`docs/media/project-overview.jpg` was generated with OpenAI’s image-generation tool in Codex. It is explanatory artwork, not experimental evidence. To the extent rights exist and are held in this image, it is made available under CC BY 4.0. No university or publisher figure is reproduced.

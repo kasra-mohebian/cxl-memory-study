@@ -32,7 +32,7 @@ Bandwidth values below use **GiB/s**. Legacy CSV field names such as `size_mb` a
 | HBM | 25.4581 | 14.8048 | 8.0708 | 8.5465 |
 | CXL | 3.8976 | 9.4835 | 2.8179 | 2.6090 |
 
-![Memory bandwidth](plots-reviewed/memory_bandwidth.png)
+![Bulk write vs sampled read](plots-reviewed/memory_bandwidth.png)
 
 The local-copy runs show the highest throughput on HBM. The sampled-read test has the highest observed mean for RAM; this does not establish a reliable ordering over HBM. The fastest tier depends on the operation.
 
@@ -84,7 +84,7 @@ To plot the saved dataset, install NumPy, pandas and Matplotlib, then run:
 python3 scripts/plot_results.py --out new-reviewed-plots
 ```
 
-The plotting script reads checked-in CSVs and writes a new `plots-reviewed/` directory; it refuses an existing output directory and does not execute benchmarks.
+The plotting script reads checked-in CSVs and writes to the directory given by `--out`; it refuses an existing output directory and does not execute benchmarks.
 
 ## Evidence and limits
 
