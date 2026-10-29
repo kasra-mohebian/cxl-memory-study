@@ -1,0 +1,85 @@
+Public edition: internal host, date and node identifiers omitted; recorded measurements retained.
+
+Memory Benchmark Results
+
+CPU execution fixed to the selected RAM-side node
+RAM tier: separate NUMA node
+HBM tier: separate NUMA node
+CXL tier: separate NUMA node
+Benchmark size: 1024 MB
+
+================ RUN 1 ================
+--- RAM tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.33782 s
+Sequential write bandwidth: 2.96016 GB/s
+Sequential read time: 0.0651202 s
+Sequential read bandwidth: 15.3562 GB/s
+Checksum: 117440512
+
+--- HBM tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.0355778 s
+Sequential write bandwidth: 28.1074 GB/s
+Sequential read time: 0.0661227 s
+Sequential read bandwidth: 15.1234 GB/s
+Checksum: 117440512
+
+--- CXL tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.317871 s
+Sequential write bandwidth: 3.14593 GB/s
+Sequential read time: 0.106284 s
+Sequential read bandwidth: 9.40876 GB/s
+Checksum: 117440512
+
+================ RUN 2 ================
+--- RAM tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.331083 s
+Sequential write bandwidth: 3.02039 GB/s
+Sequential read time: 0.0659596 s
+Sequential read bandwidth: 15.1608 GB/s
+Checksum: 117440512
+
+--- HBM tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.0355371 s
+Sequential write bandwidth: 28.1396 GB/s
+Sequential read time: 0.0661976 s
+Sequential read bandwidth: 15.1063 GB/s
+Checksum: 117440512
+
+--- CXL tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.256506 s
+Sequential write bandwidth: 3.89854 GB/s
+Sequential read time: 0.105498 s
+Sequential read bandwidth: 9.47884 GB/s
+Checksum: 117440512
+
+================ RUN 3 ================
+--- RAM tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.149415 s
+Sequential write bandwidth: 6.69278 GB/s
+Sequential read time: 0.0595602 s
+Sequential read bandwidth: 16.7897 GB/s
+Checksum: 117440512
+
+--- HBM tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.0354031 s
+Sequential write bandwidth: 28.2461 GB/s
+Sequential read time: 0.0665535 s
+Sequential read bandwidth: 15.0255 GB/s
+Checksum: 117440512
+
+--- CXL tier ---
+Benchmark size: 1024 MB
+Sequential write time: 0.256684 s
+Sequential write bandwidth: 3.89584 GB/s
+Sequential read time: 0.10789 s
+Sequential read bandwidth: 9.2687 GB/s
+Checksum: 117440512
+

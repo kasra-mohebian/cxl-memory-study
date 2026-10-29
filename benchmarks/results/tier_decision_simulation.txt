@@ -1,0 +1,22 @@
+Simple tier decision simulation
+Total pages: 1000
+Total accesses: 100000
+Hot page range: 0-99
+
+Tier placement result:
+HBM pages: 100, accesses served: 80095
+RAM pages: 300, accesses served: 8137
+CXL pages: 600, accesses served: 11768
+
+Top 10 pages after placement:
+page_id,accesses,tier
+82,863,HBM
+31,853,HBM
+73,851,HBM
+67,844,HBM
+25,839,HBM
+85,838,HBM
+44,838,HBM
+63,837,HBM
+98,836,HBM
+34,834,HBM

@@ -1,0 +1,4 @@
+tier,avg_seq_page_mpps,avg_rand_page_mpps
+CXL,70.8015,54.2311
+RAM,66.7230,73.7763
+HBM,97.9877,73.4138

@@ -1,0 +1,21 @@
+Public edition: internal host, date and node identifiers omitted; recorded measurements retained.
+
+HBM capacity check for page_copy_benchmark
+
+NUMA information:
+HBM node size: 16384 MB
+HBM node free: 16383 MB
+
+The page_copy_benchmark allocates two buffers: src and dst.
+Therefore, the requested benchmark size roughly requires 2x the given size.
+
+Manual check on HBM tier:
+
+size_mb,approx_total_alloc_mb,seq_copy_gbs,rand_copy_gbs
+2048,4096,9.32144,8.59817
+4096,8192,9.07433,8.38212
+6144,12288,9.31466,8.52709
+8192,16384,0.136962,1.79568
+
+Observation:
+HBM performance is stable up to 6144 MB benchmark size. The 8192 MB case is close to the full HBM node capacity because the benchmark uses two buffers. Therefore, the 8192 MB HBM result should not be used as a stable throughput estimate without further verification.

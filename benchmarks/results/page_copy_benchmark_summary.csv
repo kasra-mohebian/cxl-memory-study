@@ -1,0 +1,4 @@
+tier,avg_seq_copy_gbs,avg_seq_copy_mpps,avg_rand_copy_gbs,avg_rand_copy_mpps
+CXL,2.8179,0.7387,2.6090,0.6839
+RAM,4.9134,1.2880,4.5997,1.2058
+HBM,8.0708,2.1157,8.5465,2.2404

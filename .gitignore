@@ -1,0 +1,22 @@
+build/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# New measurements and reviewed plots stay separate from course artifacts.
+benchmarks/runs/
+
+# Presentations and complete spoken transcripts stay private.
+*.ppt
+*.pptx
+**/presentation-transcript.md
+**/presentation-outline.md
+**/speaker-notes*
+seminar/report-transcript.md
+
+# Full manuscripts and university submissions stay private.
+*.pdf
+benchmarks/paper/

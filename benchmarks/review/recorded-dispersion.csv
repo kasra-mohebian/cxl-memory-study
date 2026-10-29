@@ -1,0 +1,49 @@
+experiment,group,metric,n,mean,median,min,max,sample_sd
+memory_benchmark,CXL,write_gbs,5,3.897556,3.89776,3.8955,3.89934,0.001379358547
+memory_benchmark,CXL,read_gbs,5,9.483506,9.52359,9.27822,9.56585,0.1176558555
+memory_benchmark,HBM,write_gbs,5,25.45806,27.5765,21.5589,28.1243,3.40468542
+memory_benchmark,HBM,read_gbs,5,14.8048,15.0263,14.3454,15.1253,0.3925264832
+memory_benchmark,RAM,write_gbs,5,5.621272,6.67282,3.83103,6.68056,1.452975716
+memory_benchmark,RAM,read_gbs,5,15.49482,16.5921,11.1468,16.6864,2.43297213
+page_benchmark,CXL,seq_page_mpps,5,70.80154,76.9407,42.83,81.2874,15.77083681
+page_benchmark,CXL,rand_page_mpps,5,54.23106,58.4048,35.4199,60.8642,10.58821212
+page_benchmark,HBM,seq_page_mpps,5,97.98766,100.961,69.3663,130.922,28.19003033
+page_benchmark,HBM,rand_page_mpps,5,73.41382,75.5468,54.6012,92.9723,18.0064327
+page_benchmark,RAM,seq_page_mpps,5,66.72298,68.2737,59.2592,69.8594,4.241956785
+page_benchmark,RAM,rand_page_mpps,5,73.77634,74.1654,54.9146,88.7575,12.20220804
+page_copy_benchmark,CXL,seq_copy_gbs,5,2.817916,2.82076,2.80839,2.82843,0.00829541319
+page_copy_benchmark,CXL,rand_copy_gbs,5,2.609032,2.61117,2.59797,2.61617,0.00719526372
+page_copy_benchmark,HBM,seq_copy_gbs,5,8.07077,7.54617,6.83834,9.31404,1.143407334
+page_copy_benchmark,HBM,rand_copy_gbs,5,8.546508,8.52945,8.45481,8.67347,0.08800370344
+page_copy_benchmark,RAM,seq_copy_gbs,5,4.913388,4.91011,4.90617,4.92814,0.008685114852
+page_copy_benchmark,RAM,rand_copy_gbs,5,4.599694,4.58645,4.54749,4.64104,0.04032746372
+inter_tier_copy_benchmark,CXL / HBM,seq_copy_gbs,3,2.795593333,2.84136,2.69233,2.85309,0.08962078572
+inter_tier_copy_benchmark,CXL / HBM,rand_copy_gbs,3,2.41195,2.39967,2.39544,2.44074,0.02502241595
+inter_tier_copy_benchmark,CXL / RAM,seq_copy_gbs,3,2.593876667,2.28302,2.27204,3.22657,0.5479560025
+inter_tier_copy_benchmark,CXL / RAM,rand_copy_gbs,3,2.674186667,2.13797,2.1356,3.74899,0.930807745
+inter_tier_copy_benchmark,HBM / CXL,seq_copy_gbs,3,1.729236667,1.78059,1.57851,1.82861,0.1327229299
+inter_tier_copy_benchmark,HBM / CXL,rand_copy_gbs,3,1.897056667,1.7093,1.50335,2.47852,0.5139830315
+inter_tier_copy_benchmark,HBM / RAM,seq_copy_gbs,3,2.38673,2.34026,2.13242,2.68751,0.28044754
+inter_tier_copy_benchmark,HBM / RAM,rand_copy_gbs,3,3.815473333,3.83294,3.74424,3.86924,0.06430445811
+inter_tier_copy_benchmark,RAM / CXL,seq_copy_gbs,3,1.912626667,1.46458,1.38825,2.88505,0.843007664
+inter_tier_copy_benchmark,RAM / CXL,rand_copy_gbs,3,1.86721,1.47702,1.37995,2.74466,0.7614423964
+inter_tier_copy_benchmark,RAM / HBM,seq_copy_gbs,3,3.95013,3.03336,2.91819,5.89884,1.68861453
+inter_tier_copy_benchmark,RAM / HBM,rand_copy_gbs,3,4.305393333,3.01061,2.81396,7.09161,2.414936912
+page_copy_size_sweep,CXL / 1024,seq_copy_gbs,3,2.811893333,2.81231,2.80753,2.81584,0.004170639439
+page_copy_size_sweep,CXL / 1024,rand_copy_gbs,3,2.605026667,2.60613,2.60194,2.60701,0.002709101942
+page_copy_size_sweep,CXL / 4096,seq_copy_gbs,3,2.801396667,2.80479,2.78309,2.81631,0.01686796174
+page_copy_size_sweep,CXL / 4096,rand_copy_gbs,3,2.591366667,2.58646,2.58637,2.60127,0.008576656303
+page_copy_size_sweep,CXL / 8192,seq_copy_gbs,3,2.786803333,2.78122,2.77935,2.79984,0.01132873485
+page_copy_size_sweep,CXL / 8192,rand_copy_gbs,3,2.569856667,2.57333,2.56067,2.57557,0.008034334654
+page_copy_size_sweep,HBM / 1024,seq_copy_gbs,3,8.768976667,9.27941,7.73972,9.2878,0.8913722917
+page_copy_size_sweep,HBM / 1024,rand_copy_gbs,3,8.548013333,8.58384,8.40674,8.65346,0.1272020131
+page_copy_size_sweep,HBM / 4096,seq_copy_gbs,3,9.281083333,9.28151,9.27643,9.28531,0.004455348845
+page_copy_size_sweep,HBM / 4096,rand_copy_gbs,3,8.525953333,8.51621,8.51426,8.54739,0.0185902833
+page_copy_size_sweep,HBM / 8192,seq_copy_gbs,3,0.1794706667,0.197821,0.137416,0.203175,0.03651866058
+page_copy_size_sweep,HBM / 8192,rand_copy_gbs,3,2.16842,2.11709,1.91306,2.47511,0.2845191159
+page_copy_size_sweep,RAM / 1024,seq_copy_gbs,3,4.915016667,4.91987,4.90279,4.92239,0.0106633078
+page_copy_size_sweep,RAM / 1024,rand_copy_gbs,3,4.603776667,4.59733,4.58582,4.62818,0.02190347081
+page_copy_size_sweep,RAM / 4096,seq_copy_gbs,3,4.894363333,4.8932,4.88851,4.90138,0.006513388775
+page_copy_size_sweep,RAM / 4096,rand_copy_gbs,3,4.555003333,4.55716,4.54983,4.55802,0.00450082585
+page_copy_size_sweep,RAM / 8192,seq_copy_gbs,3,4.88945,4.89396,4.87988,4.89451,0.008292424253
+page_copy_size_sweep,RAM / 8192,rand_copy_gbs,3,4.498936667,4.49654,4.49637,4.5039,0.004299213106

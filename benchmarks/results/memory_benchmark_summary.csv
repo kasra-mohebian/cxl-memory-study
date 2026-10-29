@@ -1,0 +1,4 @@
+tier,avg_write_gbs,avg_read_gbs
+CXL,3.8976,9.4835
+RAM,5.6213,15.4948
+HBM,25.4581,14.8048
