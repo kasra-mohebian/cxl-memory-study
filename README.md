@@ -1,8 +1,8 @@
 # RAM, HBM & CXL Memory Benchmarks
 
-![Conceptual illustration of memory tiers and page operations; component shapes are schematic, not the server’s physical layout or a performance comparison.](docs/media/project-overview.jpg)
+![Technical concept illustration of the memory tiers and page operations; it is not the measured server layout or a performance ranking.](docs/media/project-overview-technical.png)
 
-*Conceptual illustration of memory tiers and page operations; component shapes are schematic, not the server’s physical layout or a performance comparison.*
+*Technical concept illustration of the memory tiers and page operations; it is not the measured server layout or a performance ranking.*
 
 C++ microbenchmarks, recorded measurements and a literature review of CXL memory for database systems. This student project compares page reads, page copies and simple data placement across RAM, HBM and CXL-attached memory.
 
