@@ -38,7 +38,7 @@ This is a set of microbenchmarks and a placement simulation. It is not a complet
 ## Research summaries
 
 - [Short summary of the seminar topic](seminar/README.md).
-- [Public material and private submissions](MATERIALS.md).
+- [Guide to the included materials](MATERIALS.md).
 
 ## Reading and running
 
@@ -48,21 +48,17 @@ For a technical review, start with the [code walkthrough](benchmarks/src/README.
 
 ## Benchmark status
 
-The current tools fix argument validation, use a steady clock and verify full destination contents after both copy passes. The NUMA program checks allowed nodes and queries page residency, failing if placement cannot be verified. These changes have not produced new CXL hardware results.
-
-The recorded dataset predates the corrected source. Its measurement-era code is retained privately with the original coursework; the current programs have not produced replacement hardware measurements. [Known limitations](benchmarks/KNOWN-LIMITATIONS.md) distinguish corrected code from unresolved experimental limits.
+The current tools fix argument validation, use a steady clock and verify full destination contents after both copy passes. The NUMA program checks allowed nodes and queries page residency, failing if placement cannot be verified. The saved measurements were collected before these revisions and have not been repeated with the current programs. [Known limitations](benchmarks/KNOWN-LIMITATIONS.md) distinguish corrected code from unresolved experimental limits.
 
 ## Publication edition
 
-This repository is a reviewed public edition of earlier coursework. The original submissions are retained separately. The READMEs summarize the topics discussed and explain the public code and measurements. Full reports, report sources, presentation text, speaker notes and slide-by-slide outlines are kept private. Personal contact details and internal machine identifiers are omitted. Numeric measurements are preserved; node-identifier columns are omitted from public CSVs.
+This repository brings together the code, recorded measurements and short research summaries from the completed coursework. Full submission files are not included. Personal contact details and internal machine identifiers are omitted; the CSVs retain the measured values without node-identifier columns.
 
 Only the completed seminar and course-project material is included. No supervisor prototype, private correspondence or thesis implementation is distributed here.
 
-## Permission and acknowledgements
+## Acknowledgements
 
-The completed seminar and course-project materials are shared with permission from my supervisor, Prof. Dr. Maximilian E. Schüle.
-
-I thank Prof. Dr. Maximilian E. Schüle for his supervision and feedback, and for encouraging me to publish the work together with its measured results.
+I thank [Prof. Dr. Maximilian E. Schüle](https://www.uni-bamberg.de/dt/team/maximilian-e-schuele/) for his supervision and feedback, and for encouraging me to publish the work together with its measured results. The completed seminar and course-project materials are shared with his permission.
 
 I also thank the Data Engineering group at the University of Bamberg for access to the research server used for the measurements.
 
@@ -79,5 +75,3 @@ This is a personal portfolio repository, not an official publication of the Univ
 Code: MIT. Original text, plots and benchmark tables: CC BY 4.0. See [license scope](LICENSES.md) and [third-party exclusions](RIGHTS.md).
 
 Reviewed CSV dispersion (median, min/max, sample SD) is available in [benchmarks/review/](benchmarks/review/). Historical PNGs and measurement files remain unchanged.
-
-This repository contains the current public edition only. Earlier repository histories and original coursework remain in private archives.

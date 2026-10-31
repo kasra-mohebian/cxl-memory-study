@@ -2,7 +2,7 @@
 
 The course project explores how memory tiers behave for operations that matter to a page-based buffer manager. It includes recorded measurements and a small synthetic placement example.
 
-This README summarizes the project. The full report, its source files and presentation materials are kept private.
+The sections below explain the programs, recorded results and how to run the experiments.
 
 ## Scope and environment
 
@@ -92,7 +92,7 @@ All five raw/summary CSV families (90 raw rows) were independently checked: thei
 
 The experiments are single-threaded microbenchmarks on one system. Cache state, CPU placement, frequency and allocation behavior affect the results. The historical runs did not provide per-run residency proof. There is no SSD comparison, full DBMS workload, general concurrency test or CXL query evaluation here.
 
-The [known limitations](KNOWN-LIMITATIONS.md) document confirmed gaps in copy-integrity checking and input validation, plus placement and timing considerations. Current code addresses implementation checks; experimental limits remain before collecting a new research dataset. Completed-course measurements have not been silently replaced with results from another machine.
+The [known limitations](KNOWN-LIMITATIONS.md) document confirmed gaps in copy-integrity checking and input validation, plus placement and timing considerations. Current code addresses implementation checks; experimental limits remain before collecting a new research dataset. The saved measurements come from the completed course project, not a new run on another machine.
 
 ## Relationship to the seminar and thesis
 
@@ -100,7 +100,7 @@ The [seminar](../seminar/README.md) provided the background and placement questi
 
 ## Corrected tools and historical results
 
-The measurement-era source is retained privately with the original coursework. The current source fixes input, copy verification and timing/placement checks. New output is separate from `results/`; never describe the recorded coursework data as results from the corrected code. The page-read working set can remain cache-resident and fixed run order remains a limitation. See [current limitations](KNOWN-LIMITATIONS.md).
+The recorded measurements were collected before the current input, copy-verification and timing/placement checks were added. New runs write to a separate directory; the saved coursework data is not a measurement of the revised code. The page-read working set can remain cache-resident and fixed run order remains a limitation. See [current limitations](KNOWN-LIMITATIONS.md).
 
 To create reviewed charts from the recorded CSVs without replacing historical PNGs:
 

@@ -1,6 +1,6 @@
 # Code walkthrough
 
-This directory contains all five C++ source files found in the completed course-project snapshot. The current implementations are a post-course correction; the measurement-era sources are retained privately with the original coursework. The executable experiments, recorded data and plotting path are connected below so a reviewer can inspect the implementation rather than relying on the report alone.
+This directory contains the project’s five C++ programs. They have been revised since the recorded measurements were collected. The table below connects each program to its recorded data, so you can follow an experiment from implementation to results.
 
 | Source | Implementation | Recorded evidence |
 | --- | --- | --- |
